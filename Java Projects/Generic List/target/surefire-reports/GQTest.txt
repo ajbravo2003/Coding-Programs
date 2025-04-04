@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: GQTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.01 s <<< FAILURE! - in GQTest
+GQTest  Time elapsed: 0.005 s  <<< ERROR!
+org.junit.platform.commons.JUnitException: @BeforeAll method 'void GQTest.setUp()' must be static unless the test class is annotated with @TestInstance(Lifecycle.PER_CLASS).
+

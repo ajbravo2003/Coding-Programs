@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: MyTest
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.069 s <<< FAILURE! - in MyTest
+testEvaluateWinningsPlayerWins  Time elapsed: 0.008 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "BaccaratGame.evaluateWinnings()" because "this.game" is null
+	at MyTest.testEvaluateWinningsPlayerWins(MyTest.java:220)
+
