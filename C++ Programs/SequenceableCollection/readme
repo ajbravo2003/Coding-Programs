@@ -1,0 +1,12 @@
+Hello,
+My steps to run program:
+    1 - add main.cpp file in SequenceableCollection.cpp + run using ctrl + alt + n if lazy
+    2 - or Open terminal
+    3 - replace my sample main.cpp file code with yours and run g++ -o main main.cpp 
+    4 - then run ./main
+
+For Main file: 
+    1. Make sure to import files correctly
+    2. Create an object using SequenceableCollection collection or SequenceableCollection* collections2 = new SequenceableCollection();
+    3. Use dot operaotr or -> where needed.
+    4. Use sample main.cpp file as a guide.
