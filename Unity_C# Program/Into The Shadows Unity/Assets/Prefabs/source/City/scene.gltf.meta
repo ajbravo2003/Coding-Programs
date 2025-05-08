@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: 55088c23466d565438e819d27ab25c62
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 804e1ce4c496647cfa3f1a1134187c71, type: 3}
+  _removeEmptyRootObjects: 1
+  _scaleFactor: 1
+  _deduplicateResources: 0
+  _maximumLod: 300
+  _readWriteEnabled: 1
+  _generateColliders: 0
+  _swapUvs: 0
+  _generateLightmapUVs: 0
+  _importBlendShapeNames: 1
+  _blendShapeFrameWeight:
+    _option: 0
+    _multiplier: 1
+  _importNormals: 0
+  _importTangents: 0
+  _importCamera: 2
+  _importAnimations: 2
+  _mecanimHumanoidFlip: 0
+  _addAnimatorComponent: 0
+  _animationLoopTime: 1
+  _animationLoopPose: 0
+  _importMaterials: 1
+  _enableGpuInstancing: 0
+  _texturesReadWriteEnabled: 1
+  _generateMipMaps: 1
+  _useSceneNameIdentifier: 1
+  _textureCompression: -50
+  _gltfAsset: '<b>Generator: </b>Sketchfab-16.54.0
+
+    <b>Version: </b>2.0
+
+    
+
+    <b>Extras:
+    </b>
+
+    "author": "abhayexe (https://sketchfab.com/abhayexe)"
+
+    "license":
+    "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)"
+
+    "source": "https://sketchfab.com/3d-models/full-gameready-city-buildings-0545317292c44490af5408cb58633121"
+
+    "title":
+    "Full Gameready City Buildings"
+
+'
+  optimizeGameObjects: 0
+  materials:
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  textures:
+  - {fileID: 2800000, guid: 3d1e23b48111c484e88f9c42d8f419ff, type: 3}
+  - {fileID: 2800000, guid: 238bc0d110ad8914f8354c9e8df5a503, type: 3}
+  - {fileID: 2800000, guid: d6a1fa8b109a9d346b2de70194ff480a, type: 3}
+  - {fileID: 2800000, guid: c06c058ca4acde84194e8a3ff1c36ca0, type: 3}
+  - {fileID: 2800000, guid: 1bf020707b308bf4a870992d7fc53352, type: 3}
+  - {fileID: 2800000, guid: a7ba3194b5e452a4788ec68c66e21cd7, type: 3}
+  - {fileID: 2800000, guid: ae8769cad4affaf4ebbde940d5f6876a, type: 3}
+  - {fileID: 2800000, guid: ad60d07200b45e94ebfaca56c1bc75d9, type: 3}
+  - {fileID: 2800000, guid: f5729ee3236496a4a87634ee5eeee249, type: 3}
+  - {fileID: 2800000, guid: 75fcfc5d0b48e4d4fb3db37a926dbf96, type: 3}
+  - {fileID: 2800000, guid: 0a9f99886335e594199472551f9c08ca, type: 3}
+  - {fileID: 2800000, guid: 86c6c5cc650140e42bb9969fd5d2705c, type: 3}
+  - {fileID: 2800000, guid: d1bf7a6e8caf67c4caa3280041bebcb8, type: 3}
+  - {fileID: 2800000, guid: 5f38c882574dc824092e13ca8a0ebcfb, type: 3}
+  - {fileID: 2800000, guid: 41966b3c7f0ee9c46929d2ea51485b7b, type: 3}
+  - {fileID: 2800000, guid: c8c76c0eb8a6ad644b41b50c0bdf2694, type: 3}
+  - {fileID: 2800000, guid: ca1eda0869a030b4c96ab88ff874fe31, type: 3}
+  - {fileID: 2800000, guid: b160bcd8322f2e24eb1fff86dd339be0, type: 3}
+  - {fileID: 2800000, guid: ea076cff1f61f674b9d4eb204816f3e6, type: 3}
+  - {fileID: 2800000, guid: 81377f35043d4de42828885d1eb26279, type: 3}
+  - {fileID: 2800000, guid: a9d9389edd29649488545b13066185ce, type: 3}
+  - {fileID: 2800000, guid: ca889da8c6dd02a4683c5e726dc3be49, type: 3}
+  - {fileID: 2800000, guid: e7f32350edbabda42889fae5dd73af23, type: 3}
+  - {fileID: 2800000, guid: 1ee229419cac24442beabf3961e4396b, type: 3}
+  - {fileID: 2800000, guid: b741916e55132274aa198ec8244f59c8, type: 3}
+  - {fileID: 2800000, guid: 1dd7c056711404745afdf1f03626f8ed, type: 3}
+  - {fileID: 2800000, guid: 29501796e76d18d4887c880a5562c9ab, type: 3}
+  - {fileID: 2800000, guid: 6bc11cc905f64de43a54afb8861244c2, type: 3}
+  - {fileID: 2800000, guid: dae50cb0ed6e2b14389ee9ab81689e50, type: 3}
+  - {fileID: 2800000, guid: d3e7cca001a4a16469f53c26e8c1a69f, type: 3}
+  - {fileID: 2800000, guid: 3f2c586e496858443b6a5f041e62987d, type: 3}
+  - {fileID: 2800000, guid: 1ef5c24c118dafa42b8928bcb77ef544, type: 3}
+  - {fileID: 2800000, guid: 53d8b03a0ad88c04ab2c8ff6dfcb1ae8, type: 3}
+  - {fileID: 2800000, guid: d22a865be9d240f4597c37d34dd459ec, type: 3}
+  - {fileID: 2800000, guid: b8569895b053c0241af2ed4be1f217b8, type: 3}
+  - {fileID: 2800000, guid: 7a1f660e9b0b80647933722b39a4087b, type: 3}
+  - {fileID: 2800000, guid: 88c8399106f019f46965993c0578feaa, type: 3}
+  - {fileID: 2800000, guid: 61320b924fbe082439d20c543a3e77a6, type: 3}
+  - {fileID: 2800000, guid: c9007770deac2e748ba5de3f466fcbf8, type: 3}
+  - {fileID: 2800000, guid: 1c37ea7fabf50214b8af61c4cc6f8b59, type: 3}
+  - {fileID: 2800000, guid: 94aacd7f36871a8439a2e7026bdd6697, type: 3}
+  - {fileID: 2800000, guid: e160162955eba544691cb419bc6dd224, type: 3}
+  - {fileID: 2800000, guid: b055288bea5e90446b9b2982b437f602, type: 3}
+  - {fileID: 2800000, guid: f32157d9cbc4fb74cb6e1b8fefdb5c40, type: 3}
+  - {fileID: 2800000, guid: 8b7996aa7f5a0c945bbb05439e781edf, type: 3}
+  - {fileID: 2800000, guid: c0d1188c3c9df474b96babe9adf89cfa, type: 3}
+  - {fileID: 2800000, guid: f253e46db5d66b74fb83dc0cf4d22422, type: 3}
+  - {fileID: 2800000, guid: 6aabb324cffe19442af4571089904d6f, type: 3}
+  - {fileID: 2800000, guid: 3b185b1377bc674488e847f87540a43f, type: 3}
+  - {fileID: 2800000, guid: e90cfbd30b35a504bad6c43c6b084313, type: 3}
+  - {fileID: 2800000, guid: c8966c6f5f9d13844978aedced18f488, type: 3}
+  - {fileID: 2800000, guid: 8907da3110e49b74baaa7522578a72d8, type: 3}
+  - {fileID: 2800000, guid: 611ef1da5d6c9e844a53f0e89a2f28d3, type: 3}
+  - {fileID: 2800000, guid: 777baca6f64b4ae4e95bbb9b0135af49, type: 3}
+  - {fileID: 2800000, guid: 5dee05bd5f6cd454e9b0b297c73eeabe, type: 3}
+  - {fileID: 2800000, guid: e346c03bf55d4cb4cb3836b59e42b426, type: 3}
+  - {fileID: 2800000, guid: a0010c8e6f5694144a47b2f4252eafd1, type: 3}
+  - {fileID: 2800000, guid: 13552f5381e7c384e978522672bf052c, type: 3}
+  - {fileID: 2800000, guid: 5b80b9e9d7dc3904c8ec8daea0f8c56a, type: 3}
+  - {fileID: 2800000, guid: 202c5ce56c7d1fa4fa1cab4cdc268da6, type: 3}
+  - {fileID: 2800000, guid: 70e28127ec755f7408e3af919063ca09, type: 3}
+  - {fileID: 2800000, guid: e1db1ee202966fc4da7d5f974e50167e, type: 3}
+  - {fileID: 2800000, guid: 8e18deff98f8fd942af76093600ce4fd, type: 3}
+  - {fileID: 2800000, guid: a368919d9e7978f47a50d484df889c4c, type: 3}
+  - {fileID: 2800000, guid: 20260023d71c5784ca79812fb2d2d798, type: 3}
+  - {fileID: 2800000, guid: 1d5f10fc0230d9a4081044a7dd87ba0c, type: 3}
+  - {fileID: 2800000, guid: e6064db7a726b6e4588a67183255f9de, type: 3}
+  - {fileID: 2800000, guid: 390ee8ff492986d4e86d32ed79990076, type: 3}
+  - {fileID: 2800000, guid: 4ce041ac8d11cc34cb15eb3059a1da09, type: 3}
+  - {fileID: 2800000, guid: 942142b12f198f74982da7c11eec4f13, type: 3}
+  - {fileID: 2800000, guid: dfe73c2f4b482c049a754a3818121002, type: 3}
+  - {fileID: 2800000, guid: 16d4588894e006940ad8abdac9c88a7b, type: 3}
+  - {fileID: 2800000, guid: b027ecd9dd608654b8cdf3a48e266208, type: 3}
+  - {fileID: 2800000, guid: d4fda65a101987d488f59bf041796b5f, type: 3}
+  - {fileID: 2800000, guid: dc1bd7b99988c04499f293bac93c7bcb, type: 3}
+  - {fileID: 2800000, guid: 9fbd132e1bab84648a284ba6a2aaf097, type: 3}
+  - {fileID: 2800000, guid: dc6bbdc1b510bd845a54dd943c02158d, type: 3}
+  - {fileID: 2800000, guid: 397bee9f17e11e245ae4c19665d3b774, type: 3}
+  - {fileID: 2800000, guid: 09fde4afc9af23e4d914e4dc83f6e655, type: 3}
+  - {fileID: 2800000, guid: b4e2db5e6da1b2b42a0532f1a2906a56, type: 3}
+  - {fileID: 2800000, guid: 071b4c97362f5124e84504e1aa338fdd, type: 3}
+  - {fileID: 2800000, guid: f9d356473c68f3f49a9365969015fc19, type: 3}
+  - {fileID: 2800000, guid: 8e98938af27150345bb61244cda216f9, type: 3}
+  - {fileID: 2800000, guid: 9d1bd72ea4d882f4ba4aa584bfd89ee1, type: 3}
+  - {fileID: 2800000, guid: 2fca61339ac609740bd64488ae25d593, type: 3}
+  - {fileID: 2800000, guid: 87d2f58411ab3164cb080c738abb413f, type: 3}
+  - {fileID: 2800000, guid: a0667130e4163654c801ed6bcb305a8a, type: 3}
+  - {fileID: 2800000, guid: 634dedd523449da4bad882ea33b5c684, type: 3}
+  - {fileID: 2800000, guid: c9e2cd24e420fe741a45315a55ea47f0, type: 3}
+  - {fileID: 2800000, guid: d2d63c00bd50dfb4ba0cb35ced6b156f, type: 3}
+  - {fileID: 2800000, guid: e38fc6e7eb820cf49a5ac6fc018ddc21, type: 3}
+  - {fileID: 2800000, guid: 81fefae46246e0d4aad76200813ddcb7, type: 3}
+  - {fileID: 2800000, guid: 2a2f79757b6d3aa43a6a0361001a7e1b, type: 3}
+  - {fileID: 2800000, guid: 98a3bc5eabdf95044b854c204a358bb4, type: 3}
+  - {fileID: 2800000, guid: 6848e44b9b496d9429c575db93a275ab, type: 3}
+  - {fileID: 2800000, guid: f2546b6d0c2559644b7d5926e6cd16ba, type: 3}
+  - {fileID: 2800000, guid: a5657ca21f2735d45b3979ce8cb6a8a2, type: 3}
+  - {fileID: 2800000, guid: 0ded2c39db06a4245b50437623833b0c, type: 3}
+  hasSceneData: 1
+  hasAnimationData: 0
+  hasMaterialData: 1
+  hasTextureData: 1
+  animations: []
+  _extensions:
+  - name: KHR_materials_specular
+    supported: 1
+    used: 1
+    required: 0
+  _textures:
+  - texture: {fileID: 2800000, guid: 3d1e23b48111c484e88f9c42d8f419ff, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 238bc0d110ad8914f8354c9e8df5a503, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: d6a1fa8b109a9d346b2de70194ff480a, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: c06c058ca4acde84194e8a3ff1c36ca0, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 1bf020707b308bf4a870992d7fc53352, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: a7ba3194b5e452a4788ec68c66e21cd7, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: ae8769cad4affaf4ebbde940d5f6876a, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: ad60d07200b45e94ebfaca56c1bc75d9, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: f5729ee3236496a4a87634ee5eeee249, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 75fcfc5d0b48e4d4fb3db37a926dbf96, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 0a9f99886335e594199472551f9c08ca, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 86c6c5cc650140e42bb9969fd5d2705c, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: d1bf7a6e8caf67c4caa3280041bebcb8, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 5f38c882574dc824092e13ca8a0ebcfb, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 41966b3c7f0ee9c46929d2ea51485b7b, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: c8c76c0eb8a6ad644b41b50c0bdf2694, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: ca1eda0869a030b4c96ab88ff874fe31, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: b160bcd8322f2e24eb1fff86dd339be0, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: ea076cff1f61f674b9d4eb204816f3e6, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 81377f35043d4de42828885d1eb26279, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: a9d9389edd29649488545b13066185ce, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: ca889da8c6dd02a4683c5e726dc3be49, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: e7f32350edbabda42889fae5dd73af23, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 1ee229419cac24442beabf3961e4396b, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: b741916e55132274aa198ec8244f59c8, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 1dd7c056711404745afdf1f03626f8ed, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 29501796e76d18d4887c880a5562c9ab, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 6bc11cc905f64de43a54afb8861244c2, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: dae50cb0ed6e2b14389ee9ab81689e50, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: d3e7cca001a4a16469f53c26e8c1a69f, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 3f2c586e496858443b6a5f041e62987d, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 1ef5c24c118dafa42b8928bcb77ef544, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 53d8b03a0ad88c04ab2c8ff6dfcb1ae8, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: d22a865be9d240f4597c37d34dd459ec, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: b8569895b053c0241af2ed4be1f217b8, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 7a1f660e9b0b80647933722b39a4087b, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 88c8399106f019f46965993c0578feaa, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 61320b924fbe082439d20c543a3e77a6, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: c9007770deac2e748ba5de3f466fcbf8, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 1c37ea7fabf50214b8af61c4cc6f8b59, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 94aacd7f36871a8439a2e7026bdd6697, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: e160162955eba544691cb419bc6dd224, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: b055288bea5e90446b9b2982b437f602, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: f32157d9cbc4fb74cb6e1b8fefdb5c40, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 8b7996aa7f5a0c945bbb05439e781edf, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: c0d1188c3c9df474b96babe9adf89cfa, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: f253e46db5d66b74fb83dc0cf4d22422, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 6aabb324cffe19442af4571089904d6f, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 3b185b1377bc674488e847f87540a43f, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: e90cfbd30b35a504bad6c43c6b084313, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: c8966c6f5f9d13844978aedced18f488, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 8907da3110e49b74baaa7522578a72d8, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 611ef1da5d6c9e844a53f0e89a2f28d3, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 777baca6f64b4ae4e95bbb9b0135af49, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 5dee05bd5f6cd454e9b0b297c73eeabe, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: e346c03bf55d4cb4cb3836b59e42b426, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: a0010c8e6f5694144a47b2f4252eafd1, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 13552f5381e7c384e978522672bf052c, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 5b80b9e9d7dc3904c8ec8daea0f8c56a, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 202c5ce56c7d1fa4fa1cab4cdc268da6, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 70e28127ec755f7408e3af919063ca09, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: e1db1ee202966fc4da7d5f974e50167e, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 8e18deff98f8fd942af76093600ce4fd, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: a368919d9e7978f47a50d484df889c4c, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 20260023d71c5784ca79812fb2d2d798, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 1d5f10fc0230d9a4081044a7dd87ba0c, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: e6064db7a726b6e4588a67183255f9de, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 390ee8ff492986d4e86d32ed79990076, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 4ce041ac8d11cc34cb15eb3059a1da09, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 942142b12f198f74982da7c11eec4f13, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: dfe73c2f4b482c049a754a3818121002, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 16d4588894e006940ad8abdac9c88a7b, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: b027ecd9dd608654b8cdf3a48e266208, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: d4fda65a101987d488f59bf041796b5f, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: dc1bd7b99988c04499f293bac93c7bcb, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 9fbd132e1bab84648a284ba6a2aaf097, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: dc6bbdc1b510bd845a54dd943c02158d, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 397bee9f17e11e245ae4c19665d3b774, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 09fde4afc9af23e4d914e4dc83f6e655, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: b4e2db5e6da1b2b42a0532f1a2906a56, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 071b4c97362f5124e84504e1aa338fdd, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: f9d356473c68f3f49a9365969015fc19, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 8e98938af27150345bb61244cda216f9, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 9d1bd72ea4d882f4ba4aa584bfd89ee1, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 2fca61339ac609740bd64488ae25d593, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 87d2f58411ab3164cb080c738abb413f, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: a0667130e4163654c801ed6bcb305a8a, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 634dedd523449da4bad882ea33b5c684, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: c9e2cd24e420fe741a45315a55ea47f0, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: d2d63c00bd50dfb4ba0cb35ced6b156f, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: e38fc6e7eb820cf49a5ac6fc018ddc21, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 81fefae46246e0d4aad76200813ddcb7, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 2a2f79757b6d3aa43a6a0361001a7e1b, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 98a3bc5eabdf95044b854c204a358bb4, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 6848e44b9b496d9429c575db93a275ab, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: f2546b6d0c2559644b7d5926e6cd16ba, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: a5657ca21f2735d45b3979ce8cb6a8a2, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2800000, guid: 0ded2c39db06a4245b50437623833b0c, type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  _mainAssetIdentifier: scenes/Sketchfab_Scene
+  _importPlugins: []

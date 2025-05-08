@@ -1,0 +1,11 @@
+Model Information:
+* title:	Wrecked FSO Polonez
+* source:	https://sketchfab.com/3d-models/wrecked-fso-polonez-8e850a975b3d44f4af523d18145c4dc9
+* author:	AsG_Alligator (https://sketchfab.com/AsG_Alligator)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Wrecked FSO Polonez" (https://sketchfab.com/3d-models/wrecked-fso-polonez-8e850a975b3d44f4af523d18145c4dc9) by AsG_Alligator (https://sketchfab.com/AsG_Alligator) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
