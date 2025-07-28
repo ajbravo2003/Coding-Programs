@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rare Reminders</title>
+        <link rel="stylesheet" href="mainLayout.css"/>
+    </head>
+
+    <body>
+         <!-- Sidebar for Tasks -->
+        <div id="taskSidebar">
+            <h3>Tasks</h3>
+            <div id="taskListContainer">
+
+                <!-- This is where we store the tasks -->
+            </div>
+        </div> <!-- end of sidebar -->
+
+        <!-- Logo at the top middle -->
+        <div id="logoContainer" style="position: absolute; top: 10px; left: 50%; transform: translateX(-50%);">
+            <img src="raretaskreminderlogo.png" alt="raretaskreminderlogo" style="width: 200px; height: auto;">
+        </div>
+
+        <!-- Info Box for Task Details -->
+        <div id="taskInfoBox" style="flex: 1; padding: 20px;">
+            <h2>Task Info</h2>
+            <p id="infoName"><strong>Name:</strong> <span></span></p>
+            <p id="infoDate"><strong>Date:</strong> <span></span></p>
+            <p id="infoReschedule"><strong>Reschedule:</strong> <span></span></p>
+            <p id="infoDescription"><strong>Description:</strong> <span></span></p>
+            <button id="editFromInfoBox" class="add-btn" style="margin-top: 10px;">Edit Task</button>
+            <!-- Delete button to delete the task that is selected from the task array -->
+            <button id="deleteTaskButton" class="add-btn" style="margin-top: 10px; background-color: red; color: white;">Delete Task</button>
+        </div>        
+
+        <!-- Button to open the add task popup -->
+        <button id="addTaskButton" type="button" class="button">
+            <span class="button__text">Add Task</span>
+            <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+        </button>
+
+        <!-- Popup for adding a new task -->
+        <div id="addTaskPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: white; border: 1px solid black; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+            <h2>Add a New Task</h2>
+              <!-- <span class="red-x" onclick="closePopup()">&times;</span> -->
+            <select name="" id="suggestedTasks"></select>
+            <form id="taskForm">
+                <label for="taskName">Task<span>*</span></label>
+                <input type="text" id="taskName" name="taskName" placeholder="Name for task">
+                
+                <label for="taskDate">Last completed on<span>*</span></label>
+                <input type="date" id="taskDate" name="taskDate">
+                
+                <div class="reschedule-container">
+                    <label for="reschedule">Reschedule</label>
+                    <input type="checkbox" id="reschedule" name="reschedule">
+                </div>
+                
+                <div class="reschedule-options">
+                    <input type="number" id="rescheduleTime" name="rescheduleTime" min="1" placeholder="Enter number">
+                    <select id="rescheduleUnit" name="rescheduleUnit">
+                        <option value="Months">Months</option>
+                        <option value="Years">Years</option>
+                    </select>
+                </div>
+                
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="Write a description"></textarea>
+                
+                <button id="addTaskReminder" type="submit" class="add-btn">Add</button>
+            </form>
+            <button id="cancelAddingChanges" class="add-btn"  style="margin-top: 20px" onclick="closePopup()">Cancel</button>
+        </div>
+
+        <!-- Popup for editing a task -->
+        <div id="editTaskPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: white; border: 1px solid black; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+            <h2>Edit Task</h2>
+            <!-- <span class="red-x" onclick="closeEditPopup()">&times;</span> -->
+            <form id="editTaskForm">
+                <label for="editTaskName">Task</label>
+                <input type="text" id="editTaskName" name="editTaskName" placeholder="Edit task name">
+
+                <label for="editTaskDate">Date Completed</label>
+                <input type="date" id="editTaskDate" name="editTaskDate">
+
+                <div class="reschedule-container">
+                    <label for="editReschedule">Reschedule</label>
+                    <input type="checkbox" id="editReschedule" name="editReschedule">
+                </div>
+
+                <div class="reschedule-options">
+                    <input type="number" id="editRescheduleTime" name="editRescheduleTime" min="1" placeholder="Enter number">
+                    <select id="editRescheduleUnit" name="editRescheduleUnit">
+                        <option value="Months">Months</option>
+                        <option value="Years">Years</option>
+                    </select>
+                </div>
+                <label for="editDescription">Description</label>
+                <textarea id="editDescription" name="editDescription" placeholder="Edit description"></textarea>
+                <button id="saveTaskChanges" type="submit" class="add-btn">Save</button>
+            </form>
+            <button id="cancelTaskChanges" class="add-btn"  style="margin-top: 20px" onclick="closeEditPopup()">Cancel changes</button>
+
+        </div>  
+            
+        <script>
+            const addTaskButton = document.getElementById('addTaskButton');
+            const addTaskPopup = document.getElementById('addTaskPopup');
+            const suggestedTasks = document.getElementById('suggestedTasks');
+            const taskNameInput = document.getElementById('taskName');
+            const reschedule = document.getElementById('reschedule')
+            const description = document.getElementById('description')
+            const addTaskReminder = document.getElementById('addTaskReminder');
+            const taskListContainer = document.getElementById('taskListContainer');
+            const editTaskForm = document.getElementById('editTaskForm');
+            const rescheduleTime = document.getElementById('rescheduleTime');
+            const rescheduleUnit = document.getElementById('rescheduleUnit');
+            const cancelAddingChanges = document.getElementById('cancelAddingChanges');
+        
+            let tasks = [];
+            let taskData = [];
+            let editTaskIndex = null;
+        
+            const url = './suggestedTask.json';
+            
+            window.onload = function () {
+                const saved = localStorage.getItem('taskData');
+                if (saved) {
+                    tasks = JSON.parse(saved);
+                    sortTasks(); // load and display them
+                }
+            };
+            window.addEventListener("beforeunload", saveTasks);
+        
+            addTaskButton.addEventListener('click', () => {
+                addTaskPopup.style.display = 'block';
+                fetchDropDownOptons();
+            });
+        
+            function fetchDropDownOptons() {
+                fetch(url)
+                    .then(res => res.json())
+                    .then(data => {
+                        taskData = data;
+                        loadDropDownOptions(data);
+                    })
+                    .catch(err => console.log(err));
+            }
+        
+            function loadDropDownOptions(data) {
+                suggestedTasks.innerHTML = "";
+                let defaultOption = document.createElement("option");
+                defaultOption.text = "Suggested Tasks";
+                defaultOption.value = "";
+                defaultOption.disabled = true;
+                defaultOption.selected = true;
+                suggestedTasks.appendChild(defaultOption);
+        
+                for (row of data) {
+                    let opt = document.createElement("option");
+                    opt.text = row.text;
+                    opt.value = row.value;
+                    opt.dataset.time = row.time;
+                    suggestedTasks.options.add(opt);
+                }
+            }
+        
+            suggestedTasks.addEventListener('change',function() {
+                index = this.selectedIndex
+                selectedOption = this.options[this.selectedIndex];
+                selectedTime = selectedOption.dataset.time;
+                selectedTask = taskData.find(task => task.text === selectedOption.text);
+
+                if(selectedTask){
+                    taskNameInput.value = selectedTask.text;
+                    rescheduleTime.value = selectedTask.value;
+                    reschedule.checked = true;
+                    if(selectedTime == "Months"){
+                        rescheduleUnit.value = "Months";
+                    }else{
+                        rescheduleUnit.value = "Years"
+                    }
+
+                    taskNameInput.style.borderColor = "blue";
+                    rescheduleTime.style.borderColor = "blue";
+                    rescheduleUnit.style.borderColor = "blue";
+                    setTimeout(() => {
+                        taskNameInput.style.borderColor = "";
+                        rescheduleTime.style.borderColor = "";
+                        rescheduleUnit.style.borderColor = "";
+                    }, 2000);
+                }
+             })
+        
+            function closePopup() {
+                addTaskPopup.style.display = 'none';
+            }
+        
+            function openEditPopup(task = {}, index = null) {
+                editTaskIndex = index;
+                document.getElementById('editTaskName').value = task.name || '';
+                document.getElementById('editTaskDate').value = task.date || '';
+                document.getElementById('editReschedule').checked = task.reschedule || false;
+                document.getElementById('editRescheduleTime').value = task.rescheduleTime || '';
+                document.getElementById('editRescheduleUnit').value = task.rescheduleUnit || 'Months';
+                document.getElementById('editDescription').value = task.description || '';
+                editTaskPopup.style.display = 'block';
+            }
+        
+            function closeEditPopup() {
+                editTaskPopup.style.display = 'none';
+            }
+        
+            function populateTaskContainer(taskName, taskDateInput) {
+                if (!taskName || !taskDateInput) return;
+        
+                let taskElement = document.createElement("div");
+                taskElement.style.display = "flex";
+                taskElement.style.flexDirection = "column";
+                taskElement.style.alignItems = "flex-start";
+                taskElement.style.padding = "10px";
+                taskElement.style.marginBottom = "10px";
+                taskElement.style.backgroundColor = "#fff";
+                taskElement.style.borderRadius = "5px";
+                taskElement.style.boxShadow = "1px 1px 3px rgba(0, 0, 0, 0.1)";
+        
+                let taskText = document.createElement("span");
+                taskText.textContent = taskName;
+                taskText.style.fontWeight = "bold";
+                taskText.style.marginBottom = "5px";
+                taskText.style.textAlign = "center";
+                taskText.style.width = "100%";
+        
+                let lowerRow = document.createElement("div");
+                lowerRow.style.display = "flex";
+                lowerRow.style.justifyContent = "space-between";
+                lowerRow.style.width = "100%";
+        
+                let taskDate = document.createElement("span");
+                taskDate.textContent = taskDateInput;
+                taskDate.style.color = "gray";
+                taskDate.style.fontSize = "14px";
+        
+                let index = tasks.findIndex(t => t.name === taskName && t.date === taskDateInput);
+        
+                let viewButton = document.createElement("button");
+                viewButton.textContent = "View Details";
+                viewButton.style.background = "#ffa500";
+                viewButton.style.color = "white";
+                viewButton.style.border = "none";
+                viewButton.style.padding = "5px 10px";
+                viewButton.style.cursor = "pointer";
+                viewButton.style.borderRadius = "5px";
+                viewButton.style.marginRight = "5px";
+                viewButton.onclick = function () {
+                    displayTaskInfo(tasks[index],index)
+                };
+        
+                let completeButton = document.createElement("button");
+                completeButton.textContent = "Complete";
+                completeButton.style.background = "green";
+                completeButton.style.color = "white";
+                completeButton.style.border = "none";
+                completeButton.style.padding = "5px 10px";
+                completeButton.style.cursor = "pointer";
+                completeButton.style.borderRadius = "5px";
+                // When the task is completed
+                completeButton.onclick = function () {
+                    let willReschedule   = tasks[index].reschedule;//checks if tasks is gonna reschedule 
+                    let rescheduleTime   = tasks[index].rescheduleTime; //gets the time
+                    let rescheduleUnit   = tasks[index].rescheduleUnit; //gets months/dates
+                    if (willReschedule){//gives reschedule toast
+                        showToast(`🎉 Task “${taskName}” completed! Rescheduled  ${rescheduleTime} ${rescheduleUnit} from today.`);
+                    } 
+                    else{//gives complete toast
+                        showToast(`🎉 Task “${taskName}” completed!`);
+                    }
+
+                    // taskElement.style.textDecoration = "line-through"; // Mark as completed
+                    completeButton.disabled = true; // Disables the button
+        
+                    // Check if the task is rescheduled
+                    if (tasks[index].reschedule) { // Check if rescheduling is enabled for this task
+                    let newTaskDate = getNewTaskDate(taskDateInput, tasks[index].rescheduleTime, tasks[index].rescheduleUnit);
+                    tasks.push({ 
+                        name: taskName, 
+                        date: newTaskDate, 
+                        reschedule: true, 
+                        rescheduleTime: tasks[index].rescheduleTime, 
+                        rescheduleUnit: tasks[index].rescheduleUnit, 
+                        description: tasks[index].description
+                    });
+                }
+
+                // Remove the completed task
+                tasks.splice(index, 1);
+                taskElement.remove();
+                sortTasks(); // Update task list
+                };
+        
+                lowerRow.appendChild(taskDate);
+                lowerRow.appendChild(viewButton);
+                lowerRow.appendChild(completeButton);
+                taskElement.appendChild(taskText);
+                taskElement.appendChild(lowerRow);
+                taskListContainer.appendChild(taskElement);
+            }
+            function getNewTaskDate(currentDate, rescheduleTime, rescheduleUnit) {
+                let date = new Date(currentDate);
+                if (rescheduleUnit === "Months") {
+                    date.setMonth(date.getMonth() + parseInt(rescheduleTime));
+                } else if (rescheduleUnit === "Years") {
+                    date.setFullYear(date.getFullYear() + parseInt(rescheduleTime));
+                }
+                return date.toISOString().split('T')[0]; // Return date in YYYY-MM-DD format
+            }
+        
+            function sortTasks() {
+                tasks.sort((a, b) => new Date(a.date) - new Date(b.date));
+                taskListContainer.innerHTML = "";
+                tasks.forEach(task => populateTaskContainer(task.name, task.date));
+            }
+        
+            addTaskReminder.addEventListener('click', function (event) {
+                event.preventDefault();
+                let newTask = taskNameInput.value.trim();
+                let taskDateInput = document.getElementById('taskDate').value;
+                let rescheduleInput= document.getElementById('reschedule').checked
+                let rescheduleTimeInput = parseInt(document.getElementById('rescheduleTime').value);
+                let rescheduleUnitInput = document.getElementById('rescheduleUnit').value
+                let descriptionValue = document.getElementById('description').value
+                if (newTask && taskDateInput) {
+                    let adjustedDate = new Date(taskDateInput);
+
+                    if (rescheduleInput && !isNaN(rescheduleTimeInput)) {
+                        if (rescheduleUnitInput === "Months") {
+                            adjustedDate.setMonth(adjustedDate.getMonth() + rescheduleTimeInput);
+                        } else if (rescheduleUnitInput === "Years") {
+                            adjustedDate.setFullYear(adjustedDate.getFullYear() + rescheduleTimeInput);
+                        }
+                    }
+
+                    let formattedAdjustedDate = adjustedDate.toISOString().split('T')[0];
+                    
+                    tasks.push({ name: newTask, date: formattedAdjustedDate, reschedule: rescheduleInput, rescheduleTime: rescheduleTimeInput, rescheduleUnit: rescheduleUnitInput, description: descriptionValue }); //Add new task to tasks
+                    console.log(tasks)
+                    sortTasks(); //Sort tasks and update the display
+                    showToast(`✅ Task “${newTask}” added successfully!`);//shows we created task
+                    taskNameInput.value = "";
+                    document.getElementById('taskDate').value = "";
+                    taskNameInput.style.borderColor = "";
+                    document.getElementById('taskDate').style.borderColor = ""
+                    rescheduleTime.value = ""
+                    rescheduleTime.style.borderColor = ""
+                    reschedule.checked = false;
+                    rescheduleUnit.value = "Months"
+                    reschedule.value = ""
+                    description.value = ""
+                    closePopup();
+                } else if (!newTask && !taskDateInput){
+                    document.getElementById('taskDate').style.borderColor = "red"
+                    taskNameInput.style.borderColor = "red";
+                } else if (!taskDateInput){
+                    document.getElementById('taskDate').style.borderColor = "red"
+                    taskNameInput.style.borderColor = "";
+                } else if (!newTask){
+                    taskNameInput.style.borderColor = "red";
+                    document.getElementById('taskDate').style.borderColor = ""
+                }
+            });
+        
+            editTaskForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+        
+                if (editTaskIndex !== null) {
+                    tasks[editTaskIndex] = {
+                        name: document.getElementById('editTaskName').value,
+                        date: document.getElementById('editTaskDate').value,
+                        reschedule: document.getElementById('editReschedule').checked,
+                        rescheduleTime: document.getElementById('editRescheduleTime').value,
+                        rescheduleUnit: document.getElementById('editRescheduleUnit').value,
+                        description: document.getElementById('editDescription').value
+                    };
+                    sortTasks();
+                    displayTaskInfo(tasks[editTaskIndex],editTaskIndex);
+                    closeEditPopup();
+                }
+            });
+            function displayTaskInfo(task, index) {
+                document.getElementById('infoName').querySelector('span').textContent = task.name;
+                document.getElementById('infoDate').querySelector('span').textContent = task.date;
+                document.getElementById('infoReschedule').querySelector('span').textContent = 
+                    task.reschedule ? `Every ${task.rescheduleTime} ${task.rescheduleUnit}` : 'No';
+                document.getElementById('infoDescription').querySelector('span').textContent = 
+                    task.description || 'No description provided.';
+
+                // Save the index for editing later
+                editTaskIndex = index;
+
+                // Assign edit button in info box to open the edit popup
+                const editBtn = document.getElementById('editFromInfoBox');
+                editBtn.onclick = function () {
+                    if (editTaskIndex !== null) {
+                        openEditPopup(task, index);
+                    } else {
+                        alert('No task selected to edit.');
+                    }
+                };
+            }
+            function saveTasks(){
+                localStorage.setItem('taskData', JSON.stringify(tasks));
+            }
+
+            function showToast(msg, duration = 4000){//displays toast message bottom left and only shows for 4 seconds
+                toast = document.getElementById('toast');
+                toast.textContent = msg;
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), duration);
+            }
+
+            //Delete task button, when clicked, it will delete the task that is selected from the task array
+            document.getElementById('deleteTaskButton').addEventListener('click', function() {
+                if (editTaskIndex !== null) {
+                    //Confirm with the user before deleting
+                    if (confirm('Are you sure you want to DELETE this task?')) {
+                        tasks.splice(editTaskIndex, 1); //Remove the task from the array
+                        
+                        //Clear the task info box
+                        document.getElementById('infoName').querySelector('span').textContent = '';
+                        document.getElementById('infoDate').querySelector('span').textContent = '';
+                        document.getElementById('infoReschedule').querySelector('span').textContent = '';
+                        document.getElementById('infoDescription').querySelector('span').textContent = '';
+                        
+                        //Reset the edit index
+                        editTaskIndex = null;
+
+                        sortTasks(); //Refresh the task list
+                        saveTasks(); //Save changes to localStorage
+                    }
+                } else {
+                    alert('No task selected to delete.');
+                }
+            });
+
+            //Cancel button resets all border colors normal after adding task
+            cancelAddingChanges.addEventListener('click', function() {
+                taskNameInput.style.borderColor = "";
+                document.getElementById('taskDate').style.borderColor = ""
+            });
+
+        </script>
+        <div id="toast" class="toast"></div>
+    </body>
+</html>
