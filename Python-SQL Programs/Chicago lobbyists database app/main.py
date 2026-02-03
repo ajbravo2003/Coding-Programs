@@ -1,7 +1,7 @@
   #/**------------------------------------------
 #     Project 2 – Chicago Lobbyist Database App
-#     Course: CS 341, Spring 2024.
-#     System: Codio IDE 2024
+#     Course: CS 341,
+#     System: Codio IDE 2025
 #     Author: Alejandro Bravo
 #  ---------------------------------------------**/
 import sqlite3
